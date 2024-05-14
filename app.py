@@ -92,7 +92,7 @@ def handle_user_input(message):
     chat_history.append({"role": "user", "content": message})
 
     data = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=chat_history,
         stream=True,
     )
